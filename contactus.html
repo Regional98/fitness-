@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<!-- Created by: Jake Wommack | Date: 11/03/2025 -->
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Forward Fitness Club | Contact Us</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+  <link rel="icon" sizes="192x192" href="images/android-chrome-192.png">
+</head>
+
+<body>
+<div id="container">
+
+  <header>
+    <a href="index.html"><img src="images/test.jpg" alt="Forward Fitness Club logo"></a>
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About Us</a></li>
+      <li><a href="classes.html">Classes</a></li>
+      <li><a href="nutrition.html">Nutrition</a></li>
+      <li><a href="contactus.html">Contact Us</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <h1>Complete the form below to begin your free trial.</h1>
+
+    <form id="contact-form" action="#" method="post">
+      <!-- Customer Information -->
+      <fieldset>
+        <legend>Customer Information</legend>
+
+        <label for="fname">First Name:</label>
+        <input type="text" id="fname" name="fname" required>
+
+        <label for="lname">Last Name:</label>
+        <input type="text" id="lname" name="lname" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="phone">Phone:</label>
+        <input type="tel" id="phone" name="phone">
+      </fieldset>
+
+      <!-- Additional Information -->
+      <fieldset>
+        <legend>Additional Information</legend>
+
+        <p>I would like more information about:</p>
+        <label><input type="checkbox" name="interest" value="group"> Group Fitness</label><br>
+        <label><input type="checkbox" name="interest" value="training"> Personal Training</label><br>
+        <label><input type="checkbox" name="interest" value="nutrition"> Nutrition</label>
+      </fieldset>
+
+      <!-- Referral Source -->
+      <fieldset>
+        <legend>Referral Source</legend>
+
+        <label for="findus">How did you find us?</label>
+        <select id="findus" name="findus">
+          <option value="ad">Advertisement</option>
+          <option value="friend">Friend</option>
+          <option value="social">Social Media</option>
+          <option value="search">Search Engine</option>
+        </select>
+
+        <label for="questions">Questions?</label>
+        <textarea id="questions" name="questions" rows="4" cols="25"></textarea>
+      </fieldset>
+
+      <div class="form-buttons">
+        <input type="submit" value="Submit">
+      </div>
+    </form>
+
+    <!-- Map Section -->
+    <section id="map-section">
+      <h2>Visit Us</h2>
+      <iframe 
+        class="map"
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2948.0517572084697!2d-71.05369748598341!3d42.34568388400981!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89e37a7dc2d57e7d%3A0x36ec93427cd9c011!2sChannel%20Center%20St%2C%20Boston%2C%20MA!5e0!3m2!1sen!2sus!4v1591137213400!5m2!1sen!2sus"
+        allowfullscreen
+        loading="lazy"
+        aria-hidden="false"
+        tabindex="0">
+      </iframe>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Forward Fitness Club</p>
+    <p><a href="mailto:forwardfitness@club.net">forwardfitness@club.net</a></p>
+  </footer>
+
+</div>
+</body>
+</html>

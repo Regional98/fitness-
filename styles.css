@@ -1,0 +1,625 @@
+body, header, nav, main, footer, h1, div, img, ul, figure, figcaption, section, article, aside {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+* { box-sizing: border-box; }
+
+body {
+  background-color: #000000;
+  font-family: "Roboto Slab", serif;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+header {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  background-color: #000;
+  height: 190px;
+}
+
+header img {
+  display: block;
+  margin: 0;
+}
+
+nav {
+  padding: 1%;
+  margin-bottom: 1%;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  text-align: center;
+}
+
+nav li {
+  font-size: 1.5em;
+  font-family: Verdana, Arial, sans-serif;
+  border-top: 1px solid #fff;
+}
+
+nav li:first-child {
+  border-top: none;
+}
+
+nav li a {
+  display: block;
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 0.5em 1em;
+}
+
+main {
+  clear: left;
+  background-color: #fff;
+  padding: 2%;
+  font-size: 1.15em;
+}
+
+.action {
+  font-size: 1.35em;
+  color: #666600;
+  font-weight: bold;
+}
+
+footer p {
+  font-size: 0.75em;
+  text-align: center;
+  color: #fff;
+  padding: 0 1em;
+}
+
+footer p a {
+  color: #fff;
+  text-decoration: none;
+}
+
+#weights, #cardio, #training {
+  width: 29%;
+  float: left;
+  margin: 0 2%;
+}
+
+#exercises {
+  clear: left;
+  border-top: 1px solid #000;
+  border-bottom: 1px solid #000;
+  background-color: #f2f2f2;
+  padding: 1% 2%;
+}
+
+#exercises dt {
+  font-weight: bold;
+}
+
+#exercises dd {
+  padding: 0.5% 1% 2% 0;
+}
+
+#contact {
+  text-align: center;
+}
+
+#contact a {
+  color: #666600;
+  text-decoration: none;
+}
+
+.external-link {
+  color: #666600;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.map {
+  border: 8px solid #000;
+}
+
+.mobile {
+  display: block;
+}
+
+.tablet-desktop {
+  display: none;
+}
+
+.tel-link {
+  background-color: #404040;
+  padding: 2%;
+  margin: 0 auto;
+  width: 80%;
+  text-align: center;
+  border-radius: 5px;
+}
+
+.tel-link a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.5em;
+  display: block;
+}
+
+.hours {
+  margin-left: 10%;
+}
+
+.round {
+  border-radius: 8px;
+}
+.frame {
+  position: relative;
+  max-width: 450px;
+  margin: 2% auto;
+}
+
+.pic-text {
+  position: absolute;
+  bottom: 0;
+  background: rgba(0,0,0,0.5);
+  color: #fff;
+  width: 100%;
+  padding: 20px;
+  text-align: center;
+  font-family: Verdana, Arial, sans-serif;
+  font-size: 1.5em;
+  font-weight: bold;
+}
+.grid {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-gap: 20px;
+}
+
+.pic-text {
+  font-size: 1em;
+  padding: 10px;
+}
+.pic-text {
+  font-size: 1.5em;
+  padding: 20px;
+}
+
+.frame {
+  opacity: 0.9;
+}
+
+.frame:hover {
+  opacity: 1;
+  box-shadow: 8px 8px 10px #808080;
+}
+.mobile h3,
+.action {
+  text-shadow: 5px 5px 8px #ccc;
+}
+@media screen and (min-width: 630px) {
+  .mobile {
+    display: none;
+  }
+
+  .tablet-desktop {
+    display: block;
+  }
+
+  main {
+    font-size: 1.15em;
+  }
+
+  .map {
+    border: 2px solid #000;
+    width: 95%;
+    height: 50%;
+  }
+
+  header {
+    display: block;
+    position: static;
+    height: auto;
+    float: left;
+    width: 25%;
+    padding: 0;
+    margin: 0;
+  }
+
+  header img {
+    margin: 0;
+    display: block;
+  }
+
+  nav {
+    float: right;
+    width: 70%;
+    padding: 0;
+    margin: 0;
+  }
+
+  nav ul {
+    text-align: right;
+    margin-right: 3%;
+  }
+
+  nav li {
+    display: inline-block;
+    border-top: none;
+    border-right: 1px solid #fff;
+  }
+
+  nav li:last-child {
+    border-right: none;
+  }
+
+  nav li a {
+    color: #fff;
+    font-weight: bold;
+    background: none;
+  }
+
+  main {
+    clear: both;
+  }
+}
+/* Nutrition Page Layout */
+.nutrition-box {
+  background-color: #f9f9f9;
+  padding: 2%;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.nutrition-box h3 {
+  text-align: center;
+  font-size: 1.4em;
+  margin-bottom: 10px;
+  color: #000;
+}
+
+.nutrition-box img {
+  display: block;
+  margin: 0 auto 15px auto;
+  max-width: 85%;
+}
+
+.nutrition-box ul {
+  margin: 0 0 10px 20px;
+}
+
+.nutrition-box h4 {
+  margin-top: 10px;
+  margin-bottom: 5px;
+  font-size: 1.1em;
+}
+
+/* Grid adjustment for nutrition page */
+.grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+  padding: 20px;
+}
+
+@media screen and (min-width: 768px) {
+  .grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+  }
+}
+
+
+
+
+
+
+@media screen and (min-width: 630px), print {
+  #exercises {
+    background: linear-gradient(to right, #ccc, #fff);
+  }
+}
+
+@media screen and (min-width: 1015px), print {
+  nav li {
+    border: none;
+  }
+
+  nav li a {
+    padding: 0.5em 1em;
+    color: #fff;
+    background: none;
+    font-weight: bold;
+  }
+
+  nav li a:hover {
+    color: #000;
+    background-color: #fff;
+  }
+
+  main {
+    clear: left;
+  }
+
+  main h1 {
+    font-size: 1.8em;
+  }
+
+  #weights,
+  #cardio,
+  #training {
+    width: 29%;
+    float: left;
+    margin: 0 2%;
+  }
+
+  #exercises {
+    clear: left;
+  }
+
+  header { width: 25%; }
+  nav { width: 70%; }
+  nav li { border: none; }
+}
+
+@media screen and (min-width: 1921px) {
+  #container {
+    width: 1920px;
+    margin: 0 auto;
+  }
+}
+
+@media print {
+  body {
+    background-color: #fff;
+    color: #000;
+  }
+}
+
+/* ===== Tables ===== */
+.schedule {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1.5em;
+  background-color: #fff;
+}
+
+.schedule caption {
+  font-weight: bold;
+  font-size: 1.4em;
+  margin-bottom: 10px;
+}
+
+.schedule th, .schedule td {
+  border: 1px solid #000;
+  padding: 10px;
+  text-align: center;
+}
+
+.schedule th {
+  background-color: #404040;
+  color: #fff;
+}
+
+.schedule tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+/* ===== Forms ===== */
+.contact-form {
+  background-color: #f9f9f9;
+  padding: 1.5em;
+  border-radius: 8px;
+  box-shadow: 0 0 5px rgba(0,0,0,0.2);
+  max-width: 500px;
+  margin: 1em auto;
+}
+
+.contact-form label {
+  display: block;
+  margin-top: 1em;
+  font-weight: bold;
+}
+
+.contact-form input,
+.contact-form select,
+.contact-form textarea {
+  width: 100%;
+  padding: 0.5em;
+  margin-top: 0.3em;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.contact-form input[type="submit"],
+.contact-form input[type="reset"] {
+  width: 48%;
+  margin-top: 1em;
+  background-color: #404040;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.contact-form input[type="submit"]:hover,
+.contact-form input[type="reset"]:hover {
+  background-color: #666;
+}
+/* ===== Contact Form Layout (Chapter 8) ===== */
+#contact-form {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+  background-color: #f9f9f9;
+  padding: 2%;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  margin-top: 1.5em;
+}
+
+#contact-form fieldset {
+  border: 1px solid #aaa;
+  border-radius: 5px;
+  padding: 1em;
+  background-color: #fff;
+}
+
+#contact-form legend {
+  font-weight: bold;
+  font-size: 1.1em;
+}
+
+#contact-form label {
+  display: block;
+  margin-top: 0.5em;
+}
+
+#contact-form input[type="text"],
+#contact-form input[type="email"],
+#contact-form input[type="tel"],
+#contact-form select,
+#contact-form textarea {
+  width: 100%;
+  padding: 0.4em;
+  margin-top: 0.2em;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+#contact-form textarea {
+  resize: vertical;
+}
+
+.form-buttons {
+  grid-column: 1 / -1;
+  text-align: center;
+  margin-top: 1em;
+}
+
+.form-buttons input[type="submit"] {
+  background-color: #404040;
+  color: #fff;
+  padding: 0.8em 2em;
+  border: none;
+  border-radius: 4px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.form-buttons input[type="submit"]:hover {
+  background-color: #666;
+}
+/* ===== Contact Form Layout (Chapter 8) ===== */
+#contact-form {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+  background-color: #f9f9f9;
+  padding: 2%;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  margin-top: 1.5em;
+}
+
+#contact-form fieldset {
+  border: 1px solid #aaa;
+  border-radius: 5px;
+  padding: 1em;
+  background-color: #fff;
+}
+
+#contact-form legend {
+  font-weight: bold;
+  font-size: 1.1em;
+}
+
+#contact-form label {
+  display: block;
+  margin-top: 0.5em;
+}
+
+#contact-form input[type="text"],
+#contact-form input[type="email"],
+#contact-form input[type="tel"],
+#contact-form select,
+#contact-form textarea {
+  width: 100%;
+  padding: 0.4em;
+  margin-top: 0.2em;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+#contact-form textarea {
+  resize: vertical;
+}
+
+.form-buttons {
+  grid-column: 1 / -1;
+  text-align: center;
+  margin-top: 1em;
+}
+
+.form-buttons input[type="submit"] {
+  background-color: #404040;
+  color: #fff;
+  padding: 0.8em 2em;
+  border: none;
+  border-radius: 4px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.form-buttons input[type="submit"]:hover {
+  background-color: #666;
+}
+
+/* ===== Map Styling ===== */
+#map-section {
+  margin-top: 2em;
+  text-align: center;
+}
+
+#map-section h2 {
+  margin-bottom: 0.5em;
+}
+
+.map {
+  width: 95%;
+  height: 400px;
+  border: 8px solid #000;
+  border-radius: 8px;
+}
+/* ===== Chapter 9 Multimedia Styling ===== */
+audio, video {
+  display: block;
+  margin: 2em auto;
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+}
+
+#gym-audio, #promo-video {
+  text-align: center;
+  background-color: #f9f9f9;
+  padding: 2em;
+  border-radius: 10px;
+  margin-top: 2em;
+}
+
+#gym-audio h2, #promo-video h2 {
+  color: #000;
+  font-family: "Roboto Slab", serif;
+}
+audio {
+  display: block;
+  width: 300px;
+  height: 40px;
+  margin: 2em auto;
+  background: #f5f5f5;
+  border: 2px solid #000;
+}
